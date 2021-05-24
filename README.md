@@ -7,7 +7,7 @@ For managing updates and fixes for the Roll20 sheet for Masks: A New Generation
 - [ ] Add option to move dropdown for no roll
 - [ ] Create Sheetworker to transfer existing passive moves to active moves with no roll
 - [ ] Change layout to remove passive move list and all references to passive/active moves
-## New Features 
+## New Features
 - [ ] Text box for abilities
 - [ ] Print move to chat buttons
-- [ ] Show name of the current label in roll query popup
+- [x] Show name of the current label in roll query popup
