@@ -129,7 +129,7 @@
 			</div>
                 <br>
         	<div class="sheet-attr-box">
-            	<button type='roll' align="center" value='&{template:aw} {{name=@{character_name}}} {{roll_name=Mundane}} {{roll_mod=@{mundane}}} {{result=[[2d6 + [[{[[{[[@{mundane} - @{angry} * 2 + ?{Rolling Angry. Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_mundane' ></button>
+            	<button type='roll' align="center" value='&{template:aw} {{name=@{character_name}}} {{roll_name=Mundane}} {{roll_mod=@{mundane}}} {{result=[[2d6 + [[{[[{[[@{mundane} - @{angry} * 2 + ?{Rolling Mundane. Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_mundane' ></button>
                 <label data-i18n="mundane:" class="sheet-name">Mundane:</label>
                 <input type="checkbox" name="attr_mundanelock" class="labellock">
                 <div class="statline">
@@ -241,7 +241,7 @@
 
 <!-- flat 2d6 roll, used for custom rolls -->
             <div class="sheet-attr-box">
-                <button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=something}} {{roll_mod=0}} {{result=[[2d6 + [[{[[{[[?{Rolling without a lable. Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_basic' ></button>
+                <button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=something}} {{roll_mod=0}} {{result=[[2d6 + [[{[[{[[?{Rolling without a Label. Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_basic' ></button>
                 <label data-i18n="flat2d6" class="sheet-name">Flat 2d6</label>
                 <div class="sheet-roll-box sheet-cf">
                     <label data-i18n="customrolls" class="sheet-taglines">(custom rolls)</label>
@@ -475,7 +475,7 @@
                             <div class="sheet-section-title-specialmove">
                             </div>
 							<label data-i18n="beforewegetstarted-soldier">Before we get started:</label><br>
-							<p style="text-align:center"><label data-i18n="savior:">Savior:</label><button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=Before we get started}} {{roll_mod=@{savior}}} {{result=[[2d6 + [[{[[{[[@{savior} + ?{Rolling Savior. Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_savior' ></button>
+							<p style="text-align:center"><label data-i18n="savior:">Savior:</label><button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=Before we get started}} {{roll_mod=@{savior}}} {{result=[[2d6 + [[{[[{[[@{savior} + ?{Rolling Before we get started}. Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_savior' ></button>
 							&nbsp; &nbsp; <label data-i18n="hold:" class="beforestarttitle">Hold:</label> <input type="number" name="attr_soldierhold" min="0"></p>
 							<label data-i18n="beforestart-soldier" class="sheet-beforewegetstarted">When you have time to closely observe your opposition before a fight, roll. On a 10+, hold 3. On a 7-9, hold 2. On a miss, hold 1 and mark a condition. During the fight, you can spend your hold to name a character you observed and...</label>
 							<label data-i18n="beforestart-soldier-list1" class="sheet-beforewegetstarted">&#9679; ...redirect their attack to another character or nowhere — into a wall or the sky.</label><br>
@@ -517,7 +517,7 @@
 							</table>
 							<br>
 							<label data-i18n="connect-harbinger-desc1" class="sheet-connectdots">When you <b>push yourself to remember the version of someone that exists in your future</b>, mark a condition and roll Memories. On a hit, you connect who they are now to who they are in the future; choose the role that they fulfill in the future, and the GM will tell you about their future self. On a 10+, ask a follow-up question. On a miss, they're not at all who you thought they would be; the GM will choose their role, or tell you that as far as you know, they don't exist in the future.</label>
-							<p style="text-align:center"><label data-i18n="savior:">Savior:</label><button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=Investigate Timeline}} {{roll_mod=@{savior}}} {{result=[[2d6 + [[{[[{[[@{savior} + ?{Rolling Savior. Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_savior' ></button></p>
+							<p style="text-align:center"><label data-i18n="savior:">Savior:</label><button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=Investigate Timeline}} {{roll_mod=@{savior}}} {{result=[[2d6 + [[{[[{[[@{savior} + ?{Rolling to Investigate Timeline (Savior). Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_savior' ></button></p>
 							<label data-i18n="connect-harbinger-desc2" class="sheet-connectdots"><b>At the start of each session or when time passes</b>, roll to find out how your investigations into the timeline have been going. On a hit, choose one figure noted above or one aspect of the future world you can remember. You've found a lead to follow to learn more about how the present version of that figure or aspect became the future version. On a 10+, the lead is particularly strong; right now, you can ask the GM one question about the figure or aspect, and they will answer honestly. On a miss, you're lost in the present; the GM will tell you how things are so different here, and shift your Labels according to how it makes you feel.</label>
 				</div>
 			</div>
@@ -1097,7 +1097,7 @@
 								<label class="advspectagline"><span data-i18n="bullet">&#9679;</span><input type="text" name="attr_legacymember4" style="font-size: 1em; font-weight: bold;" autocomplete="off"> <span data-i18n="legacymember4">is the greatest opponent your legacy ever faced... and is still at large.</span></label>
 							</div>
 							<hr>
-							<p style="text-align:center"><label data-i18n="savior:">Savior:</label><button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=Legacy reaction}} {{roll_mod=@{savior}}} {{result=[[2d6 + [[{[[{[[@{savior} + ?{Rolling Legacy Reaction. Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_savior' ></button></p>
+							<p style="text-align:center"><label data-i18n="savior:">Savior:</label><button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=Legacy reaction}} {{roll_mod=@{savior}}} {{result=[[2d6 + [[{[[{[[@{savior} + ?{Rolling Legacy Reaction (Savior). Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_savior' ></button></p>
 							<label data-i18n="legacydesc2" class="sheet-advspectagline"><b>Whenever time passes</b>, roll to see how the members of your legacy feel or react to your most recent exploits. Before rolling, have the other players answer these following questions about your performance. Take -1 to the roll for each 'no' answer:</label>
 							<label data-i18n="legacyquestion1" class="sheet-advspectagline">&#9679; Have you been upholding the traditions of your legacy?</label><br>
 							<label data-i18n="legacyquestion2" class="sheet-advspectagline">&#9679; Have you maintained the image of your legacy?</label><br>
@@ -1534,7 +1534,7 @@
 							<hr>
 							<label data-i18n="audiencestar-accept" class="sheet-startagline">When you <b>accept what your audience tells you about yourself</b>, clear a condition.</label>
 							<label data-i18n="audiencestar-reject" class="sheet-startagline">When you <b>reject what your audience tells you about yourself</b>, on a hit mark potential and expect retribution.</label>
-							<p style="text-align:center"><label data-i18n="superior:">Superior:</label><button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=Help from Audience}} {{roll_mod=@{superior}}} {{result=[[2d6 + [[{[[{[[@{superior} + ?{Rolling Superior. Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_superior' ></button></p>
+							<p style="text-align:center"><label data-i18n="superior:">Superior:</label><button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=Help from Audience}} {{roll_mod=@{superior}}} {{result=[[2d6 + [[{[[{[[@{superior} + ?{Rolling Help from the Audience (Superior). Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_superior' ></button></p>
 							<label data-i18n="audiencestar-help" class="sheet-startagline">When you <b>seek help from your audience</b>, roll. On a hit, someone in your audience can hook you up. On a 10+, they only make a small demand. On a 7-9, their demands are a lot higher. On a miss, you've made a mistake, and your audience won't help you until you've redeemed yourself in their eyes.</label>
                         </div>
 
@@ -1735,7 +1735,7 @@
 							</div>
 							<hr>
 
-							<p style="text-align:center"><label data-i18n="savior:">Savior:</label><button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=Seek out}} {{roll_mod=@{savior}}} {{result=[[2d6 + [[{[[{[[@{savior} + ?{Rolling Savior. Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_savior' ></button></p>
+							<p style="text-align:center"><label data-i18n="savior:">Savior:</label><button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=Seek out}} {{roll_mod=@{savior}}} {{result=[[2d6 + [[{[[{[[@{savior} + ?{Rolling Seek out someone you Respect (Savior). Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_savior' ></button></p>
 							<label data-i18n="scionrespect-desc2" class="sheet-sciontagline"><b>When you seek out one of the characters named above</b>, roll. On a hit, you track them down. On a 7-9, they're juggling their own problems, and may not have time for you. On a miss, when you find them, the situation is dire; the GM will tell you how.</label>
 							<label data-i18n="scionrespect-desc3" class="sheet-sciontagline">If you earn Influence over the characters listed above, instead you <b>mark 1 Respect</b>. If you lose Influence over the characters listed above, instead you <b>lose 1 Respect</b>. If you lose 1 Respect and you have none marked, you immediately <b>mark a condition</b>, GM's choice.</label>
 							<label data-i18n="scionrespect-desc4" class="sheet-sciontagline">The first time you reach 4 Respect on an individual, <b>take an advancement</b> (mark the corresponding box under the character).</label>
